@@ -1,15 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BLW Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <main class="page">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">B</div>
+        <div>
+          <h1>BLW Dashboard</h1>
+          <span>Painel oficial da comunidade</span>
+        </div>
+      </div>
+      <button class="menu">☰</button>
+    </header>
 
-<h1>Dashboard BLW</h1>
+    <section class="hero">
+      <div class="orb orb-blue"></div>
+      <div class="orb orb-red"></div>
 
-<button onclick="login()">Login com Discord</button>
+      <div class="avatar-card">
+        <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="Discord" />
+      </div>
 
-<script src="script.js"></script>
+      <h2>Bem-vindo ao painel BLW</h2>
+      <p>Entre com sua conta Discord para acessar rankings, perfil e ferramentas da comunidade.</p>
+
+      <button class="login-btn" onclick="login()">
+        <span>🎮</span>
+        Login com Discord
+      </button>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <strong>🏆 Ranking</strong>
+        <p>Veja sua colocação em horas e coins.</p>
+      </div>
+
+      <div class="card">
+        <strong>📢 Anúncios</strong>
+        <p>Envie invasões, jogatinas e eventos.</p>
+      </div>
+
+      <div class="card">
+        <strong>👤 Perfil</strong>
+        <p>Acompanhe seu status dentro do servidor.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
