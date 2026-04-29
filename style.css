@@ -1,0 +1,14 @@
+body {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #7f1d1d);
+  color: white;
+  text-align: center;
+  font-family: Arial;
+}
+
+button {
+  padding: 15px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #2563eb, #dc2626);
+  color: white;
+  border: none;
+}
