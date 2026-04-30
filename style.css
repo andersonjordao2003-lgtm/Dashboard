@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background:
+    radial-gradient(circle at 18% 5%, rgba(37, 99, 235, .55), transparent 32%),
+    radial-gradient(circle at 90% 15%, rgba(220, 38, 38, .45), transparent 36%),
+    linear-gradient(135deg, #020617 0%, #0f172a 45%, #220617 72%, #450a0a 100%);
+}
+
+#app {
+  min-height: 100vh;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 26px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  background: linear-gradient(135deg, #2563eb, #dc2626);
+  box-shadow: 0 0 35px rgba(59, 130, 246, .4);
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.brand span {
+  color: #cbd5e1;
+  font-size: 13px;
+}
+
+.menu {
+  width: 50px;
+  height: 50px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.18);
+  color: white;
+  background: rgba(255,255,255,.07);
+  font-size: 24px;
+}
+
+.hero,
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: linear-gradient(145deg, rgba(15,23,42,.82), rgba(30,41,59,.35));
+  box-shadow: 0 25px 80px rgba(0,0,0,.5);
+  backdrop-filter: blur(16px);
+}
+
+.hero {
+  text-align: center;
+  padding: 38px 24px;
+}
+
+.card {
+  margin-top: 16px;
+  padding: 22px;
+}
+
+.orb {
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  border-radius: 999px;
+  filter: blur(55px);
+  opacity: .55;
+}
+
+.orb.blue {
+  background: #2563eb;
+  top: -65px;
+  left: -70px;
+}
+
+.orb.red {
+  background: #dc2626;
+  right: -70px;
+  bottom: -70px;
+}
+
+.logo-big,
+.avatar {
+  position: relative;
+  z-index: 2;
+  width: 118px;
+  height: 118px;
+  border-radius: 999px;
+  margin: 0 auto 24px;
+  object-fit: cover;
+  border: 4px solid rgba(255,255,255,.18);
+  box-shadow: 0 0 55px rgba(59,130,246,.35);
+}
+
+.logo-big {
+  display: grid;
+  place-items: center;
+  font-size: 34px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #2563eb, #dc2626);
+}
+
+h2 {
+  position: relative;
+  z-index: 2;
+  margin: 0 0 14px;
+  font-size: 42px;
+  line-height: 1.05;
+}
+
+p {
+  position: relative;
+  z-index: 2;
+  color: #cbd5e1;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+button {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 17px;
+  margin-top: 14px;
+  border: none;
+  border-radius: 18px;
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  background: linear-gradient(90deg, #2563eb, #dc2626);
+  box-shadow: 0 15px 35px rgba(220,38,38,.25);
+}
+
+button.secondary {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.12);
+  box-shadow: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.status-box {
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 20px;
+  background: rgba(0,0,0,.28);
+  border: 1px solid rgba(255,255,255,.10);
+  text-align: left;
+}
+
+.status-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.status-row:last-child {
+  border-bottom: none;
+}
+
+.vip-free {
+  color: #fca5a5;
+  font-weight: 900;
+}
+
+.vip-on {
+  color: #86efac;
+  font-weight: 900;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  background: rgba(220,38,38,.16);
+  color: #fca5a5;
+  border: 1px solid rgba(220,38,38,.3);
+}
+
+.feature {
+  padding: 16px;
+  border-radius: 20px;
+  background: rgba(0,0,0,.25);
+  border: 1px solid rgba(255,255,255,.10);
+}
+
+.feature strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.footer {
+  margin: 24px 0;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 13px;
+}
