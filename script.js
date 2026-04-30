@@ -75,7 +75,7 @@ function anuncios(){
       <h2>📢 Anúncios</h2>
       <p>Confira os anúncios no servidor Discord.</p>
 
-      <button onclick="window.location.href='COLE_LINK_ANUNCIOS'">
+      <button onclick="window.location.href='https://discord.com/channels/1439301605349396613/1440725374555390144'">
         Abrir canal
       </button>
 
