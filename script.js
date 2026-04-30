@@ -1,4 +1,4 @@
-const CLIENT_ID = "COLOQUE_SEU_CLIENT_ID";
+const CLIENT_ID = "1473101255999226084";
 const REDIRECT_URI = "https://SEU-SITE.vercel.app";
 const API = "https://discord.com/api";
 
