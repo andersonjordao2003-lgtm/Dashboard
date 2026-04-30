@@ -53,7 +53,7 @@ function home(){
 }
 
 function ranking(type){
-  const link = "COLE_AQUI_LINK_DO_CANAL";
+  const link = "https://discord.com/channels/1439301605349396613/1489057061697355908,https://discord.com/channels/1439301605349396613/1495601632954810448";
 
   layout(`
     <div class="card">
