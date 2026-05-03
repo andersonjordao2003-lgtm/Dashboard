@@ -1,17 +1,40 @@
 export default async function handler(req, res) {
-  if (req.method !== "POST") {
-    return res.status(405).json({ error: "Método inválido" });
-  }
-
   try {
-    const { action, target_id, name, limit, color } = req.body;
+    const token = req.headers.authorization?.replace("Bearer ", "");
 
-    // ⚠️ aqui você pode evoluir depois
-    // por enquanto só simula sucesso
+    if (!token) return res.status(401).json({ error: "Sem token" });
+
+    const userRes = await fetch("https://discord.com/api/users/@me", {
+      headers: { Authorization: `Bearer ${token}` }
+    });
+
+    const user = await userRes.json();
+
+    // 🔥 aqui você consulta seu banco (exemplo simples fake)
+    const vipDatabase = {
+      "123456789": {
+        role_name: "VIP João",
+        slots: 5,
+        voice_name: "Call do João",
+        expires_at: "2026-05-30"
+      }
+    };
+
+    const vip = vipDatabase[user.id];
 
     return res.json({
-      ok: true,
-      message: `Ação ${action} executada`
+      user,
+      vip: vip
+        ? {
+            active: true,
+            days_left: 30,
+            slots: vip.slots,
+            role_name: vip.role_name,
+            voice_name: vip.voice_name
+          }
+        : {
+            active: false
+          }
     });
 
   } catch {
